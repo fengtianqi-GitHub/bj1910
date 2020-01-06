@@ -1,10 +1,15 @@
 from flask import Flask
 from flask_script import Manager
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate,MigrateCommand
+
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
-# print(app.config['BASEDIR'])
+db = SQLAlchemy(app) #实例例化ORM模型
+migrate = Migrate(app,db) #实例例化迁移对象
 manager = Manager(app)
+manager.add_command('db',MigrateCommand) #添加迁移命令 别名为db
 
 
 # 注册蓝图

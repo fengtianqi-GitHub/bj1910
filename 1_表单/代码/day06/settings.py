@@ -13,6 +13,19 @@ BASEDIR = os.getcwd()
 # 文件上传的目录
 UPLOAD_FOLDER = os.path.join(BASEDIR,'static/upload')
 
+# 邮件配置
+MAIL_SERVER = "smtp.qq.com"  # 邮箱服务器
+MAIL_USERNAME = "313728420@qq.com"
+MAIL_PASSWORD = 'lrpqrsrmlduabihf'  # 授权码
+MAIL_PORT = 465  # 端口
+MAIL_USE_SSL = True  # 加密发送
+
+
+#数据库:
+SQLALCHEMY_DATABASE_URI = "mysql+pymysql://python:123@47.58.225.157:3306/bj1910"
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+SECRET_KEY = "SDSDMKFKSDRIUEWWIO7636qeius*((*9wq76eq"
 if __name__ == '__main__':
     print(BASEDIR)
     print(UPLOAD_FOLDER)
