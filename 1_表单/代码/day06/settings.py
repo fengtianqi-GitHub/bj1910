@@ -13,6 +13,11 @@ BASEDIR = os.getcwd()
 # 文件上传的目录
 UPLOAD_FOLDER = os.path.join(BASEDIR,'static/upload')
 
+# 文件上传限制
+ALLOWED_SUFFIX = ['jpg','jpeg','png','bmp']  # 后缀限制
+ALLOWED_MAX_SIZE = 1024 * 1024 * 2   # 大小限制，字节 最大2M
+
+
 # 邮件配置
 MAIL_SERVER = "smtp.qq.com"  # 邮箱服务器
 MAIL_USERNAME = "313728420@qq.com"
