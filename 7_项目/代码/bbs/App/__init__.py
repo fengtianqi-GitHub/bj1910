@@ -25,8 +25,6 @@ def create_app():
     init_app(app)
 
     #注册蓝图
-    # app.register_blueprint(user)
-    # app.register_blueprint(bbs)
     register_blueprint(app)
     dog_blueprint(app)
 
