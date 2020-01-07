@@ -20,6 +20,3 @@ database = {
 SQLALCHEMY_DATABASE_URI = "mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(**database)
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-
-if __name__ == '__main__':
-    print(SQLALCHEMY_DATABASE_URI)
