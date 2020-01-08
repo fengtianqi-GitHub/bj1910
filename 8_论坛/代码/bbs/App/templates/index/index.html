@@ -82,9 +82,9 @@ function setHomepage(sURL) {
 
 		<div id="nv">
 			<ul>
-				<li <!--{if empty($bigId)}-->class="a"<!--{/if}--> id="mn_forum" ><a href="index.php" hidefocus="true" title="{$web_name}">首页</a><span>{$web_name}</span></li>
+				<li class="a" id="mn_forum" ><a href="{{ url_for('bbs.index') }}" hidefocus="true" title="{$web_name}">首页</a><span>{$web_name}</span></li>
 				{% for category in big_category %}
-				<li class="a" id="mn_home" ><a href="" hidefocus="true" title="Space">{{ category.classname }}</a></li>
+				<li class="a" id="mn_home" ><a href="/{{ category.cid }}/" hidefocus="true" title="Space">{{ category.classname }}</a></li>
 				{% endfor %}
 
 			</ul>
@@ -128,90 +128,105 @@ function setHomepage(sURL) {
 		<div id="chart" class="bm bw0 cl">
 			<div class="y">
 				<p class="chart z">
-				帖子: <em>{$tzCount}</em><span class="pipe">|</span>
-				会员: <em>{$userC}</em><span class="pipe">|</span>
-				欢迎新会员: <em>{$uName}</em>
+				帖子: <em>{{ forumcount }}</em><span class="pipe">|</span>
+				会员: <em>{{ user_count }}</em><span class="pipe">|</span>
+				欢迎新会员: <em>{{ new_user.username }}</em>
 				</p>
 			</div>
 		</div>
 	
 		<div class="mn">
-			<!--{if $bigid}-->
+
 			<div class="fl bm">
 				<!--板块 start-->
-				<div class="bm bmw  cl">
+                {#    cid==0 展示所有大板块        #}
+                {% if cid == 0 %}
+                    {% for category in big_category %}
+                        <div class="bm bmw  cl">
+                            <div class="bm_h cl">
+                                <h2>
+                                    <a href="{{ url_for('bbs.list_category',cid=category.cid) }}">{{ category.classname }}</a>
+                                </h2>
+                            </div>
+                            <div id="category_1" class="bm_c">
+                                <table cellspacing="0" cellpadding="0" class="fl_tb">
+                                    {% for small in small_category %}
+                                        {# 如果当前小版块属于大板块，则显示 #}
+                                        {% if small.parentid == category.cid %}
+                                            <tr class="fl_row">
+                                                <td class="fl_icn">
+                                                    <a href="{{ url_for('bbs.list_category',cid=small.cid) }}"><img
+                                                            src="{{ url_for('static',filename=small.classpic) }}"
+                                                            alt="{{ small.classname }}"/></a>
+                                                </td>
+                                                <td>
+                                                    <h2><a href="{{ url_for('bbs.list_category',cid=small.cid) }}"
+                                                           style="color:{$val['namestyle']}">{{ small.classname }}</a>
+                                                    </h2>
+                                                    {% if small.description  %}
+                                                         <p class="xg2">{{ small.description }}</p>
+                                                    {% endif %}
+
+                                                    <p>版主: <span class="xi2">{{ small.compere }}</span></p>
+
+                                                </td>
+                                                <td class="fl_i">
+                                                    <span class="xi2">{{ small.replycount }}</span><span
+                                                        class="xg1"> / {{ small.forumcount }}</span>
+                                                </td>
+                                                <td class="fl_by">
+                                                    <div>
+                                                        {{ small.lastpost }}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+                                    {% endfor %}
+                                </table>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                {#     展示指定大板块信息               #}
+                     <div class="bm bmw  cl">
 					<div class="bm_h cl">
-						<h2><a href="index.php?bigid={$LTmenu[0]['cid']}">{$LTmenu[0]['classname']}</a></h2>
+						<h2><a href="{{ url_for('bbs.list_category',cid=the_big.cid) }}">{{ the_big.classname }}</a></h2>
 					</div>
 					<div id="category_1" class="bm_c">
 						<table cellspacing="0" cellpadding="0" class="fl_tb">
-							<!--{loop $LTsMenu $key $val}-->
-							<tr <!--{if $key!=0}--> class="fl_row"<!--{/if}-->>
-								<td class="fl_icn" >
-									<a href="list.php?classid={$val['cid']}"><img src="{$val['classpic']}" alt="{$val['classname']}" /></a>
-								</td>
-								<td>
-									<h2><a href="list.php?classid={$val['cid']}" style="color:{$val['namestyle']}">{$val['classname']}</a></h2>
-									<p class="xg2">{$val['description']}</p>
-									<!--{if !empty($val['compere'])}-->
-									<p>版主: <span class="xi2">${getUserName($val['compere'])}</span></p>
-									<!--{/if}-->
-								</td>
-								<td class="fl_i">
-									<span class="xi2">{$val['replycount']}</span><span class="xg1"> / {$val['motifcount']}</span>
-								</td>
-								<td class="fl_by">
-									<div>
-										${categoryLast($val['lastpost'])}
-									</div>
-								</td>
-							</tr>
-							<!--{/loop}-->
+							{% for small in small_category %}
+                                {# 如果当前小版块属于大板块，则显示 #}
+                                {% if small.parentid == the_big.cid %}
+                                    <tr  class="fl_row">
+                                    <td class="fl_icn" >
+                                        <a href="{{ url_for('bbs.list_category',cid=small.cid) }}"><img src="{{ url_for('static',filename=small.classpic) }}" alt="{{ small.classname }}" /></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="{{ url_for('bbs.list_category',cid=small.cid) }}" style="color:{$val['namestyle']}">{{ small.classname }}</a></h2>
+                                        <p class="xg2">{{ small.description }}</p>
+
+                                        <p>版主: <span class="xi2">{{ small.compere }}</span></p>
+
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">{{ small.replycount }}</span><span class="xg1"> / {{ small.forumcount }}</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            {{ small.lastpost }}
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endif %}
+							{% endfor %}
 						</table>
 					</div>
 				</div>
+                {% endif %}
 				<!--板块 end-->
 			</div>
 			<!--{else}-->
-			<div class="fl bm">
-				<!--板块 start-->
-				<!--{loop $LTmenu $inde $bk}-->
-				<div class="bm bmw  cl">
-					<div class="bm_h cl">
-						<h2><a href="index.php?bigid={$bk['cid']}">{$bk['classname']}</a></h2>
-					</div>
-					<div id="category_1" class="bm_c">
-						<table cellspacing="0" cellpadding="0" class="fl_tb">
-							<!--{loop $LTsMenu $key $val}-->
-							<!--{if $val['parentid']==$bk['cid']}-->
-							<tr <!--{if $key!=0 && $key!=2}-->class="fl_row"<!--{/if}-->>
-								<td class="fl_icn" >
-									<a href="list.php?classid={$val['cid']}"><img src="{$val['classpic']}" alt="{$val['classname']}" /></a>
-								</td>
-								<td>
-									<h2><a href="list.php?classid={$val['cid']}" style="color:{$val['namestyle']}">{$val['classname']}</a></h2>
-									<p class="xg2">{$val['description']}</p>
-									<!--{if !empty($val['compere'])}-->
-									<p>版主: <span class="xi2">${getUserName($val['compere'])}</span></p>
-									<!--{/if}-->
-								</td>
-								<td class="fl_i">
-									<span class="xi2">{$val['replycount']}</span><span class="xg1"> / {$val['motifcount']}</span>
-								</td>
-								<td class="fl_by">
-									<div>
-									${categoryLast($val['lastpost'])}
-									</div>
-								</td>
-							</tr>
-							<!--{/if}-->
-							<!--{/loop}-->
-						</table>
-					</div>
-				</div>
-				<!--{/loop}-->
-				<!--板块 end-->
-			</div>
+
 			<!--{/if}-->
 			<!--<div id="online" class="bm oll">
 				<div class="bm_h">
