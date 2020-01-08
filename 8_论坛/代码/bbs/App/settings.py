@@ -7,7 +7,7 @@
 #基础配置文件
 class BaseConfig:
     DEBUG = False
-    SECRECT_KEY = '72590f76-3115-11ea-b8b1-9801a78d7440'
+    SECRET_KEY = '72590f76-3115-11ea-b8b1-9801a78d7440'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 # 开发环境
 class DevelopConfig(BaseConfig):

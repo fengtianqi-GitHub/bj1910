@@ -2,7 +2,416 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3638082-df60-4843-9dbd-bf88e42fbae4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/home.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/list.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/post.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/css/view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/Google_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/access_allow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/access_disallow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/access_normal.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/activitysmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ad.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ad_close.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/addbuddy.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/addicn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/agree.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/alipaysmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ann_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/annpm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/app_add.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/app_set.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/apphot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/appnew.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/appsetting.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_down_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_left.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_right_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrow_top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arrwd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arw.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arw_d.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arw_d2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arw_l.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/arw_r.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/atarget.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attachimg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attachinfobg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attachmediacode.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attachurl.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/atten.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attention.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attinbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/attl_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/avatar_blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/back.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bb_fly.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bb_qq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bb_sub.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bb_sup.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bbs.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg_doing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg_doing_ico.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg_home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg_share.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bg_usergroup.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/bodybg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/cam.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/card_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/check_error.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/check_right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/clck.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/clipboard.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/clock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/close-s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/close.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/cls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/cmmnt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/cmt_ico.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/codebg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/collapsed_no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/collapsed_yes.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/connect_avatar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/connect_config_mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/connect_post_syn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/connect_qq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/copy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/create_group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/dash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/data_invalid.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/data_valid.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/debate_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/debate_chart.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/debate_dr.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/debate_vs.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/debatesmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/digest_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/digest_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/digest_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/disagree.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/doodle.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/dot.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/dot_c.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/drag.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/edit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/emp.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/error.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/extstyle_none.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/facelist.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fach.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/faq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fastreply.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fav.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fav_grey.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/feed.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fj_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fl_collapsed_no.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fl_collapsed_yes.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fl_ft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fl_ft_r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/fl_hd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/flag.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/flash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/flvplayer.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/folder_common.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/folder_lock.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/folder_new.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/folder_s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/forum.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/forum_new.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/forumlink.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/g_guide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/gb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/group.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/groupicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/grouppm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/gst.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hd_shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/home.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/home.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/homelink.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hot_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hot_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hot_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/hotspot.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_ad.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_append.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_fav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_feed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_manage.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_quote_e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_quote_m_e.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_quote_m_s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_quote_s.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_task.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icon_top.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/icq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/imageloading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/imgzoom_tb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/index.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/info.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/info_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/legend_reward.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/locked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/logo_88_31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/magic_imgbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mail_active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mail_inactive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mark.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mdly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/medal9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/midavt_shadow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mifm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mine_icn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/minus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mood_input.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mood_input_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/more1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mp3player.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/msnadd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/msnchat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/mu_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/music.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/n_rate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/new_pm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/new_pm_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/newarow.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/newarow_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/newclose.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/newnotice.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/noicon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/none.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nophoto.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nophotosmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nophototiny.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nopublish.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/notice.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/numbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/nv_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ol.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/online_admin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/online_guest.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/online_member.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/online_moderator.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/online_supermod.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/op.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/oshr.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/p_debate_chart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/p_reward_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/p_topusr_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/p_trade_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pdbt.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pdbtm.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pengyou.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pg_arw.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pg_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pic-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pic-prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pic_nv_next.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pic_nv_prev.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pin_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pin_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pin_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pin_4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/player.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pllb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/plus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm-bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm-bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm-bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm-ico5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm_member.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pm_ntc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pmto.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pn_color.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pn_post.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pn_reply.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pnp2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/polljoins.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pollsmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/popupcredit_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/popupcredit_btn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/portal.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/portalbox_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/print.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pt_icn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pt_item.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pt_z.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/pubsave.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/push.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/px_e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qa.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qmenu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qq.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qq_bind.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qq_bind_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qq_login.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/quote.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qz.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/qzone.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rank_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rank_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rank_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ratbg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/ratesrcorebg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/re_unsolved.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rec_add.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rec_subtract.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/recommend_1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/recommend_2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/recommend_3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/recyclebin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/repquote.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rewardsmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/right.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rleft.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rright.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rss.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rushreply_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rwd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/rwd2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/scf.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/scrolltop.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/se.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/search.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/searchbar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/seccodeplayer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/share_btn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/share_img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/side.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/sigline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/slide.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/slisticon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/sortnum.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/spacer.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/stand_label.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/star_level1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/star_level2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/star_level3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/starlevel.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/stat.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/status_setting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/style_switch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/systempm.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tag.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/taobao.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tenpay_logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/thead.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/thread-next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/thread-prev.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/thread_prize_s.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tip_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tip_top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tip_up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tip_up_grey.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/titlebg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/titlebg_sd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/topnav.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tradesmall.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/transparent.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_empty.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_file.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_folder.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_folderopen.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_line.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_linebottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_linemiddle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_minus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_minusbottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_minusmiddle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_plus.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_plusbottom.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_plusmiddle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/tree_root.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/treeline_long.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/treeline_short.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/un_selector.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/upload.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/uploading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/user_add.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/user_link.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/user_offline.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/user_online.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/userinfo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/vd.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/vds.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/videophoto.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/videophoto_btn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/viewpay.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/vline.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/vline2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/vlineb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/warning.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/weibo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/winner_flag.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/images/yahoo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/js/admincp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/static/index/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/close.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/getpass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/head.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/home_pass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/home_qm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/home_tx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/layer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/App/templates/index/top.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../7_项目/代码/bbs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../7_项目/代码/bbs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bbs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bbs.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/views/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../day08/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day08/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bbs/.idea/bbs.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bbs/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bbs/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bbs/.idea/vcs.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,8 +424,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+            <state relative-caret-position="90">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -25,12 +434,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/extensions.py">
+        <entry file="file://$PROJECT_DIR$/App/views/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="291">
+              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
               <folding>
-                <element signature="e#151#190#0" expanded="true" />
+                <element signature="e#115#159#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,29 +448,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
-              <folding>
-                <element signature="e#120#143#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -69,10 +457,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/views/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="270">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
               <folding>
                 <element signature="e#120#142#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <folding>
+                <element signature="e#120#143#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/templates/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="86" column="107" selection-start-line="86" selection-start-column="107" selection-end-line="86" selection-end-column="107" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#h2#0;n#td#1;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,14 +500,19 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>src</find>
+      <find>href</find>
+      <find>首页</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/models.py" />
-        <option value="$PROJECT_DIR$/App/settings.py" />
         <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/App/extensions.py" />
         <option value="$PROJECT_DIR$/App/views.py" />
@@ -107,16 +524,10 @@
         <option value="$PROJECT_DIR$/App/admin/category.py" />
         <option value="$PROJECT_DIR$/App/admin/__init__.py" />
         <option value="$PROJECT_DIR$/App/__init__.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/bbs.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/App/settings.py" />
+        <option value="$PROJECT_DIR$/App/models.py" />
+        <option value="$PROJECT_DIR$/App/views/views.py" />
+        <option value="$PROJECT_DIR$/App/templates/index/index.html" />
       </list>
     </option>
   </component>
@@ -132,6 +543,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -148,23 +560,32 @@
               <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbs" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/tmp/bbs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/static/index" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\bj1910\笔记和代码\8_论坛\代码\bbs\App\static\index" />
+      <recent name="C:\bj1910\笔记和代码\8_论坛\代码\bbs\App\templates\index" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\bj1910\笔记和代码\7_项目\代码\bbs\App\views" />
       <recent name="C:\bj1910\笔记和代码\7_项目\代码\bbs\App" />
@@ -211,16 +632,18 @@
       <updated>1578377277140</updated>
       <workItem from="1578377282041" duration="6752000" />
       <workItem from="1578388931760" duration="26000" />
+      <workItem from="1578452923732" duration="2657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6778000" />
+    <option name="totallyTimeSpent" value="9435000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19174758" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19174758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -234,7 +657,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32503888" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.11664075" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -247,13 +670,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/views/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="15" lean-forward="true" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Envs/env_flask/Lib/site-packages/flask/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -265,13 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/views/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -303,19 +712,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/extensions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
+        <state relative-caret-position="321">
           <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="e#151#190#0" expanded="true" />
@@ -323,24 +722,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/App/static/index/css/home.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/templates/index/close.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/App/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="201">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="270">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="e#120#142#0" expanded="true" />
           </folding>
@@ -349,10 +764,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        <state relative-caret-position="360">
+          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="e#120#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
+          <folding>
+            <element signature="e#115#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/templates/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="86" column="107" selection-start-line="86" selection-start-column="107" selection-end-line="86" selection-end-column="107" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#h2#0;n#td#1;n#table#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
