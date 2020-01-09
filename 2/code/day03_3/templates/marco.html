@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% macro add(num) %}
+    <p>{{ num + 1 }}</p>
+{% endmacro %}
+
+<div>
+    {{ add(10) }}
+{#      <p>{{ num + 1 }}</p>#}
+</div>
+{% from 'marcos.html' import hello %}
+<p>
+    {{ hello('大波波') }}
+</p>
+</body>
+</html>

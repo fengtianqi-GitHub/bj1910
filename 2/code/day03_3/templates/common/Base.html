@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    {% block title %}
+    <title>{{ title }}</title>
+    {% endblock %}
+    {% block headers %}
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/index.css') }}">
+    {% endblock headers %}
+    {% block styles %}
+    {% endblock %}
+    {% block scripts %}
+    {% endblock scripts %}
+</head>
+
+<body>
+<!--TOP start-->
+{% block navbar %}
+<div id="toptb" class="cl">
+    <div class="wp">
+        <div class="z"><a href="javascript:;" onclick="setHomepage(&#39;http://www.phpxy.com/&#39;)">设为首页</a><a
+                href="javascript:;" onclick="window.external.AddFavorite(location.href,document.title);return false;">收藏本站</a>
+        </div>
+    </div>
+</div>
+<script>
+    function setHomepage(sURL) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+        document.body.setHomePage(sURL);
+
+    }
+</script><!--TOP end-->
+
+<!--HEAD start-->
+<div id="hd">
+    <div class="wp">
+        <div class="hdc cl">
+            <h2><a href="http://py.codingfans.cc/" title="首页 - 10分钟学院"><img src="/static/images/logo.jpg"
+                                                                            height="80" border="0"></a></h2>
+            <form method="post" autocomplete="off" id="lsform" action="http://py.codingfans.cc/login.php">
+                <div class="fastlg cl">
+                    <div class="y pns">
+                        <table cellspacing="0" cellpadding="0">
+                            <tbody>
+                            <tr>
+                                <td><span class="ftid">用户名</span></td>
+                                <td><input type="text" name="username" value="admin" id="ls_username" autocomplete="off"
+                                           class="px vm"></td>
+                                <td class="fastlg_l">
+                                    <label for="ls_cookietime"><input type="checkbox" name="cookietime"
+                                                                      id="ls_cookietime" class="pc"
+                                                                      value="true">自动登录</label>
+                                </td>
+                                <td>&nbsp;<a href="http://py.codingfans.cc/getpass.php">找回密码</a></td>
+                            </tr>
+                            <tr>
+                                <td><label for="ls_password" class="z psw_w">密码</label></td>
+                                <td><input type="password" name="password" id="ls_password" class="px vm"
+                                           autocomplete="off"></td>
+                                <td class="fastlg_l">
+                                    <button type="submit" class="pn vm" name="loginsubmit" value="true"
+                                            style="width:75px;"><em>登录</em></button>
+                                </td>
+                                <td>&nbsp;<a href="http://py.codingfans.cc/reg.php" class="xi2 xw1">立即注册</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div id="nv">
+            <ul>
+                <li class="a" id="mn_forum"><a href="http://py.codingfans.cc/index.php" hidefocus="true" title="10分钟学院">首页</a><span>10分钟学院</span>
+                </li>
+                <li id="mn_home"><a href="http://py.codingfans.cc/index.php?bigid=1" hidefocus="true" title="Space">PHP技术交流</a>
+                </li>
+                <li id="mn_home"><a href="http://py.codingfans.cc/index.php?bigid=2" hidefocus="true"
+                                    title="Space">程序人生</a></li>
+                <li id="mn_home"><a href="http://py.codingfans.cc/index.php?bigid=10" hidefocus="true"
+                                    title="Space"></a></li>
+
+            </ul>
+        </div>
+
+        <div id="scbar" class="cl">
+            <form id="scbar_form" method="get" autocomplete="off" action="http://py.codingfans.cc/search.php"
+                  target="_blank">
+                <table cellspacing="0" cellpadding="0">
+                    <tbody>
+                    <tr>
+                        <td class="scbar_icon_td"></td>
+                        <td class="scbar_txt_td"><input type="text" name="keywords" id="scbar_txt"
+                                                        onfocus="if(this.value==&#39;请输入搜索内容&#39;){this.value=&#39;&#39;;this.style.color=&#39;#666&#39;;}"
+                                                        onblur="if(this.value==&#39;&#39;){this.value=&#39;请输入搜索内容&#39;;this.style.color=&#39;#ccc&#39;;}"
+                                                        value="请输入搜索内容" style="color:#CCCCCC" autocomplete="off"></td>
+                        <td class="scbar_btn_td">
+                            <button type="submit" name="searchsubmit" id="scbar_btn" class="pn pnc" value="true"><strong
+                                    class="xi2 xs2">搜索</strong></button>
+                        </td>
+                        <td class="scbar_hot_td">
+                            <div id="scbar_hot">
+                                <strong class="xw1">热搜: </strong>
+                                <a href="http://py.codingfans.cc/search.php?keywords=%E6%B4%BB%E5%8A%A8" target="_blank"
+                                   class="xi2">活动</a>
+                                <a href="http://py.codingfans.cc/search.php?keywords=%E4%BA%A4%E5%8F%8B" target="_blank"
+                                   class="xi2">交友</a>
+                                <a href="http://py.codingfans.cc/search.php?keywords=%E6%95%99%E7%A8%8B" target="_blank"
+                                   class="xi2">教程</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</div>
+<!--HEAD end-->
+{% endblock navbar %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% block footer %}
+<!--FOOT start-->
+<div id="ft" class="wp cl">
+    <div id="flk" class="y">
+        <p>
+            <a href="http://py.codingfans.cc/index.php#">京ICP备 89273号</a><span class="pipe">|</span><strong><a
+                href="http://www.phpxy.com/" target="_blank">phpxy</a></strong>
+        </p>
+        <p class="xs0">
+            Time Now Is: 07-24 15:53 </p>
+    </div>
+    <div id="frt">
+        <p>Powered by <strong><a href="http://www.phpxy.com/" target="_blank">phpxy</a></strong> <em>V2</em></p>
+        <p class="xs0">© 2019 <a href="http://www.phpxy.com/" target="_blank">phpxy Inc.</a></p>
+    </div>
+</div><!--FOOT end-->
+{% endblock footer %}
+
+</body>
+</html>

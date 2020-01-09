@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li{font-size: 30px;color: red}
+    </style>
+</head>
+<body>
+{% if hot > 35 %}
+    <h2>热死个人了</h2>
+{% endif %}
+<p>
+    {% if hot > 35 %}
+        <h2>热死个人了</h2>
+    {% else %}
+        <h2>可以忍受</h2>
+    {% endif %}
+</p>
+<p>
+    {% if (hot < 25) and 5 > 1 %}
+        <h2>凉爽宜人</h2>
+    {% elif hot < 30 %}
+        <h2>正常</h2>
+    {% elif hot < 35 %}
+        <h2>有点热</h2>
+    {% else %}
+        <h2>太热了</h2>
+    {% endif %}
+</p>
+
+<p>
+    {% for item in students %}
+        {% if loop.first %}
+            <p>First</p>
+        {% endif %}
+        <li>{{ item }}----{{ loop.index }}</li>
+    {% else %}
+        <h2>数据不存在，请检查</h2>
+    {% endfor %}
+
+</p>
+<p>
+    {% for index in range(1,101) %}
+        {{ index }}--
+    {% endfor %}
+</p>
+</body>
+</html>
