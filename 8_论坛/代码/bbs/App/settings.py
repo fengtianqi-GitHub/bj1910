@@ -12,11 +12,11 @@ class BaseConfig:
 # 开发环境
 class DevelopConfig(BaseConfig):
     DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://python:123@47.88.225.157:3306/bj1910"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123@127.0.0.1:3306/bj1910"
 
 # 生成环境（线上）
 class ProductConfig(BaseConfig):
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://python:123@47.88.225.157:3306/bj1910"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:123@127.0.0.1:3306/bj1910"
 
 config = {
     'default':BaseConfig,
