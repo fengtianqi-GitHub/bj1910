@@ -36,31 +36,30 @@ function setHomepage(sURL) {
 	<div class="wp">
 		<div class="hdc cl">
 			<h2><a href="./" title="{$title}"><img src="{{ url_for('static',filename='index/images/logo.jpg') }}" height="80" border="0" /></a></h2>
-			<!--{if $thispage!='logout.php'}-->
-				<!--{if $_COOKIE['uid']}-->
+			{% if current_user.is_authenticated %}
 				<div id="um">
-					<div class="avt y"><a href="home_tx.php"><img src="{$GGpicture}" /></a></div>
+					<div class="avt y"><a href="home_tx.php"><img src="{{ url_for('static',filename=current_user.portrait) }}" /></a></div>
 					<p>
-					<strong class="vwmy"><a href="home.php" target="_blank">{$_COOKIE['username']}</a></strong>
+					<strong class="vwmy"><a href="home.php" target="_blank">{{ current_user.username }}</a></strong>
 					<span class="pipe">|</span><a href="home.php">设置</a>
-					<!--{if $_COOKIE['udertype']}-->
+					{% if current_user.usertype %}
 					<span class="pipe">|</span><a href="admin.php" target="_blank">管理中心</a>
-					<!--{/if}-->
-					<span class="pipe">|</span><a href="logout.php">退出</a>
+					{% endif %}
+					<span class="pipe">|</span><a href="/user/logout">退出</a>
 					</p>
 					<p>
-					<a id="extcreditmenu" href="#">积分: {$GGgrade}</a>
-					<span class="pipe">|</span>用户权限: ${userGroup($_COOKIE['udertype'])}
+					<a id="extcreditmenu" href="#">积分: {{ current_user.grade }}</a>
+					<span class="pipe">|</span>用户权限: {{ '管理员' if current_user.usertype else '普通用户' }}
 					</p>
 				</div>
-				<!--{else}-->
-				<form method="post" autocomplete="off" id="lsform" action="login.php">
+				{% else %}
+				<form method="post" autocomplete="off" id="lsform" action="{{ url_for('user.login') }}">
 				<div class="fastlg cl">
 					<div class="y pns">
 						<table cellspacing="0" cellpadding="0">
 							<tr>
 								<td><span class="ftid">用户名</span></td>
-								<td><input type="text" name="username" value="{$_COOKIE['username']}" id="ls_username" autocomplete="off" class="px vm" /></td>
+								<td><input type="text" name="username" value="" id="ls_username" autocomplete="off" class="px vm" /></td>
 								<td class="fastlg_l">
 									<label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="true" />自动登录</label>
 								</td>
@@ -76,8 +75,7 @@ function setHomepage(sURL) {
 					</div>
 				</div>
 				</form>
-				<!--{/if}-->
-			<!--{/if}-->
+			{% endif %}
 		</div>
 
 		<div id="nv">
@@ -119,7 +117,10 @@ function setHomepage(sURL) {
 <div id="wp" class="wp">
 	<div id="pt" class="bm cl">
 		<div class="z">
-			<a href="./" class="nvhm" title="{$title}">{$title}</a><em>&raquo;</em><a href="index.php">论坛</a><!--{if $bigid}--><em>&raquo;</em><a href="index.php?bigid={$LTmenu[0]['cid']}">{$LTmenu[0]['classname']}</a><!--{/if}-->
+			<a href="./" class="nvhm" title="{$title}">{$title}</a><em>&raquo;</em><a href="index.php">论坛</a>
+            {% if cid %}
+            <em>&raquo;</em><a >{{ the_big.classname }}</a>
+            {% endif %}
 		</div>
 		<div class="z"></div>
 	</div>
@@ -256,14 +257,15 @@ function setHomepage(sURL) {
 			<div class="bm lk">
 				<div id="category_lk" class="bm_c ptm">
 					<ul class="m mbn cl">
-						<!--{loop $imgUrl $index $iurl}-->
+						{% for link in links %}
 						<li class="lk_logo mbm bbda cl">
-							<img src="{$iurl['logo']}" border="0" alt="{$iurl['name']}" />
+							<img src="{{ url_for('static',filename=link.logo) }}" border="0" alt="{{ link.name }}" />
 							<div class="lk_content z">
-								<h5><a href="{$iurl['url']}" target="_blank">{$iurl['name']}</a></h5>
-								<p>{$iurl['description']}</p>
+								<h5><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></h5>
+								<p>{{ link.description }}</p>
 							</div>
-						<!--{/loop}-->
+                        </li>
+						{% endfor %}
 					</ul>
 					
 					<ul class="x mbm cl">
