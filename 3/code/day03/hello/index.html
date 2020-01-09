@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+<h1>首页</h1>
+<p>
+    {{ a + 2 }} <br>
+    {{ func(1,2,3) + 10 }}
+
+</p>
+<p>
+    {% if a > 0 %}
+        a > 0
+    {% endif %}
+</p>
+<p>
+    {% for index in list %}
+        <li>{{ index }}</li>
+    {% else %}
+        <h2>10</h2>
+    {% endfor %}
+</p>
+{% include 'other.html' %}
+<p>
+    {% from 'hong.html' import line %}
+    {{ line(5) }}
+</p>
+</body>
+</html>

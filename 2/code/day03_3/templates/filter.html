@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    {{ world | upper | lower }}
+</p>
+<p>
+
+    {{ a | default('10') }}
+</p>
+<p>
+    {% autoescape off %}
+    {{ content }}
+    {% endautoescape %}
+</p>
+
+<p>
+    {% if a is defined %}
+        {{ a }}
+    {% else %}
+        a没有定义
+    {% endif %}
+</p>
+<p>
+    {% if func is callable %}
+        {{ func() }}
+    {% endif %}
+</p>
+<p>
+    {{ b + 10 }}---{{ b > 20 }} --{{ b in [1,2,20,30,45] }}
+</p>
+</body>
+</html>

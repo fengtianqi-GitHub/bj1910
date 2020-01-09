@@ -5,7 +5,7 @@
 # @Author  : 
 # @QQ      :  
 
-from flask import Blueprint
+from flask import Blueprint, request
 
 user = Blueprint('user',__name__,url_prefix='/user')
 

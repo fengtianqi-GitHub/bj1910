@@ -1,0 +1,241 @@
+{% extends 'App/Base.html' %}
+{% block headers %}
+    {{ super() }}
+    <link rel="stylesheet" href="">
+{% endblock headers %}
+{% block content %}
+    <!--CONTENT start-->
+    <div id="wp" class="wp">
+        <div id="pt" class="bm cl">
+            <div class="z">
+                <a href="./" class="nvhm" title="首页 - 10分钟学院">首页 - 10分钟学院</a><em>&raquo;</em><a href="index.php">论坛</a>
+            </div>
+            <div class="z"></div>
+        </div>
+
+        <div id="ct" class="wp cl">
+            <div id="chart" class="bm bw0 cl">
+                <div class="y">
+                    <p class="chart z">
+                        帖子: <em>120</em><span class="pipe">|</span>
+                        会员: <em>79</em><span class="pipe">|</span>
+                        欢迎新会员: <em>tom</em>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mn">
+                <div class="fl bm">
+                    <!--板块 start-->
+                    <div class="bm bmw  cl">
+                        <div class="bm_h cl">
+                            <h2><a href="index.php?bigid=1">PHP技术交流</a></h2>
+                        </div>
+                        <div id="category_1" class="bm_c">
+                            <table cellspacing="0" cellpadding="0" class="fl_tb">
+                                <tr>
+                                    <td class="fl_icn">
+                                        <a href="{{ url_for('user.user_login',cid=1) }}"><img
+                                                src="/static/images/forum.gif" alt="内核源码"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="{{ url_for('user.user_login',cid=1) }}" style="color:">内核源码</a>
+                                        </h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2">test001</span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">106</span><span class="xg1"> / 95</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=250" class="xi2">向迈克尔杰克致敬——</a> <cite><span
+                                                title="2019-07-23">19小时前</span> haohl</cite></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=3"><img src="/static/images/forum.gif"
+                                                                          alt="PHP框架"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=3" style="color:">PHP框架</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2">test002</span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">1</span><span class="xg1"> / 8</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=186" class="xi2"></a> <cite><span title="2019-06-20">2019-06-20 21:26:53</span>
+                                            admin</cite></div>
+                                    </td>
+                                </tr>
+                                <tr class="fl_row">
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=4"><img src="/static/images/forum.gif"
+                                                                          alt="开源产品"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=4" style="color:">开源产品</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2"></span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">8</span><span class="xg1"> / 6</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=244" class="xi2">发帖是否有金币</a> <cite><span
+                                                title="2019-07-23">22小时前</span> lycc</cite></div>
+                                    </td>
+                                </tr>
+                                <tr class="fl_row">
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=6"><img src="public/images/forum.gif" alt="进阶讨论"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=6" style="color:">进阶讨论</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2"></span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">1</span><span class="xg1"> / 1</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=130" class="xi2">12345</a> <cite><span
+                                                title="2019-06-19">2019-06-19 22:04:55</span> 啊啊啊</cite></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bm bmw  cl">
+                        <div class="bm_h cl">
+                            <h2><a href="index.php?bigid=2">程序人生</a></h2>
+                        </div>
+                        <div id="category_1" class="bm_c">
+                            <table cellspacing="0" cellpadding="0" class="fl_tb">
+                                <tr class="fl_row">
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=9"><img src="public/images/forum.gif" alt="求职招聘"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=9" style="color:">求职招聘</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2"></span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">0</span><span class="xg1"> / 3</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=248" class="xi2"></a> <cite><span title="2019-07-23">19小时前</span>
+                                            admin</cite></div>
+                                    </td>
+                                </tr>
+                                <tr class="fl_row">
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=8"><img src="public/images/forum.gif" alt="经验分享"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=8" style="color:">经验分享</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2"></span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">0</span><span class="xg1"> / 0</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            从未
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="fl_row">
+                                    <td class="fl_icn">
+                                        <a href="list.php?classid=7"><img src="public/images/forum.gif" alt="名人故事"/></a>
+                                    </td>
+                                    <td>
+                                        <h2><a href="list.php?classid=7" style="color:">名人故事</a></h2>
+                                        <p class="xg2"></p>
+                                        <p>版主: <span class="xi2"></span></p>
+                                    </td>
+                                    <td class="fl_i">
+                                        <span class="xi2">0</span><span class="xg1"> / 7</span>
+                                    </td>
+                                    <td class="fl_by">
+                                        <div>
+                                            <a href="detail.php?id=119" class="xi2">github-bbs论坛源码</a> <cite><span
+                                                title="2019-06-19">2019-06-19 19:34:42</span> sss</cite></div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="bm bmw  cl">
+                        <div class="bm_h cl">
+                            <h2><a href="index.php?bigid=10"></a></h2>
+                        </div>
+                        <div id="category_1" class="bm_c">
+                            <table cellspacing="0" cellpadding="0" class="fl_tb">
+                            </table>
+                        </div>
+                    </div>
+                    <!--板块 end-->
+                </div>
+                <!--<div id="online" class="bm oll">
+        <div class="bm_h">
+            <h3>
+                <strong><a href="#">在线会员</a></strong>
+                <span class="xs1">- <strong>1</strong> 人在线 - <strong>1</strong> 会员(<strong>0</strong> 隐身),
+                <strong>0</strong> 位游客 - 最高记录是 <strong>4</strong> 于 <strong>2012-4-17</strong>.</span>
+            </h3>
+        </div>
+        <dl id="onlinelist" class="bm_c">
+            <dt class="ptm pbm bbda">
+                <img src="/static/images/online_admin.gif" /> 管理员 &nbsp; &nbsp; &nbsp;
+                <img src="/static/images/online_supermod.gif" /> 超级版主 &nbsp; &nbsp; &nbsp;
+                <img src="/static/images/online_moderator.gif" /> 版主 &nbsp; &nbsp; &nbsp;
+                <img src="/static/images/online_member.gif" /> 会员 &nbsp; &nbsp; &nbsp;
+            </dt>
+            <dd class="ptm pbm">
+                <ul class="cl">
+                    <li title="时间: 20:44">
+                        <img src="/static/images/online_admin.gif" alt="icon" />
+                        <a href="#">admin</a>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </div>-->
+                <div class="bm lk">
+                    <div id="category_lk" class="bm_c ptm">
+                        <ul class="m mbn cl">
+                            <li class="lk_logo mbm bbda cl">
+                                <img src="/static/images/logo_88_31.gif" border="0" alt="官方论坛"/>
+                                <div class="lk_content z">
+                                    <h5><a href="http://www.discuz.net" target="_blank">官方论坛</a></h5>
+                                    <p>提供最新 Discuz! 产品新闻、软件下载与技术交流</p>
+                                </div>
+                        </ul>
+
+                        <ul class="x mbm cl">
+                            <li><a href="http://www.5d6d.com/" target="_blank" title="我的领地">我的领地</a></li>
+                            <li><a href="http://www.baidu.com" target="_blank" title="百度">百度</a></li>
+                            <li><a href="http://www.sina.com/" target="_blank" title="漫游平台">漫游平台</a></li>
+                            <li><a href="自己找" target="_blank" title="bilibili">bilibili</a></li>
+                            <li><a href="http://www.163.com/" target="_blank" title="Yeswan">Yeswan</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!--CONTENT end-->
+
+{% endblock content %}
