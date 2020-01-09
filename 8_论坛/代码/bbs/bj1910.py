@@ -1,10 +1,10 @@
-# -*- coding: utf-8 -*-
-# @File    : models.py
-# 描述     ：数据模型
-# @Time    : 2020/1/7 14:11
-# @Author  : 
-# @QQ      :
+# coding: utf-8
+from sqlalchemy import Column, Date, DateTime, Integer, SmallInteger, String
+from sqlalchemy.schema import FetchedValue
+from flask_sqlalchemy import SQLAlchemy
+
 from App.extensions import db
+
 
 class Category(db.Model):
     __tablename__ = 'bbs_category'
@@ -23,7 +23,7 @@ class Category(db.Model):
 
 
 
-class Closeip(db.Model):
+class BbsCloseip(db.Model):
     __tablename__ = 'bbs_closeip'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -46,7 +46,7 @@ class Link(db.Model):
 
 
 
-class Order(db.Model):
+class BbsOrder(db.Model):
     __tablename__ = 'bbs_order'
 
     oid = db.Column(db.Integer, primary_key=True)
@@ -100,7 +100,7 @@ class Reply(db.Model):
 class User(db.Model):
     __tablename__ = 'bbs_user'
 
-    id = db.Column(db.Integer, primary_key=True,name='uid')
+    uid = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(60), unique=True)
     password_hash = db.Column(db.String(128), nullable=False)
     usertype = db.Column(db.Integer)
