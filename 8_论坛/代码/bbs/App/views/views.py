@@ -6,9 +6,10 @@
 # @QQ      :  
 
 from flask import Blueprint, render_template
+from flask_login import login_required
 from sqlalchemy import func
 
-from App.models import Category, db, User
+from App.models import Category, db, User, Link
 
 bbs = Blueprint('bbs',__name__)
 
@@ -25,8 +26,10 @@ def index(cid=0):
 
     #统计帖子数，回复数
     # 原生sql语句执行
-    res = db.session.execute("select sum(replycount) reply from bbs_category")
-    print(res.fetchall(),"ddddd")
+    res = db.session.execute("select sum(replycount) reply,sum(forumcount) from bbs_category")
+    # print(res.fetchall(),"ddddd")
+    data = res.fetchall()
+    print(data[0])
     counts = db.session.query(func.sum(Category.replycount),func.sum(Category.forumcount)).group_by(Category.parentid).having(Category.parentid==0).all()
     print(counts[0][0],counts[0][1])
     replycount = counts[0][0]
@@ -34,10 +37,10 @@ def index(cid=0):
 
     # 会员数
     user_count = User.query.count()
-
-
     new_user = User.query.order_by(-User.id).limit(1).first()
 
+    # 友情连接
+    links = Link.query.all()
 
     # forumcount = Category.query(func.sum(Category.forumcount)).scalar()
     # 指定大板块
@@ -55,3 +58,8 @@ def index(cid=0):
 def list_category(cid):
     print(cid,type(cid))
     return "帖子列表"
+
+@bbs.route('/publish/')
+@login_required
+def publish_post():
+    return "发帖"

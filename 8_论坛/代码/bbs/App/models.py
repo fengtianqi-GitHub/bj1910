@@ -4,6 +4,11 @@
 # @Time    : 2020/1/7 14:11
 # @Author  : 
 # @QQ      :
+from flask_login import UserMixin
+from werkzeug.security import generate_password_hash,check_password_hash
+
+from App.extensions import  login_manager
+
 from App.extensions import db
 
 class Category(db.Model):
@@ -97,7 +102,7 @@ class Reply(db.Model):
 
 
 
-class User(db.Model):
+class User(db.Model,UserMixin):
     __tablename__ = 'bbs_user'
 
     id = db.Column(db.Integer, primary_key=True,name='uid')
@@ -117,3 +122,25 @@ class User(db.Model):
     lasttime = db.Column(db.DateTime)
     allowlogin = db.Column(db.Integer)
     grade = db.Column(db.Integer)
+
+    @property
+    def password(self):
+        return self.password_hash
+    @password.setter
+    def password(self,value):
+        # 对密码签名
+        self.password_hash = generate_password_hash(value)
+    def check_password(self,password): # password是用户传入的密码原文
+        # 对比传入密码和签名后密码是否一致
+        return check_password_hash(self.password_hash,password)
+
+# 登录回调
+@login_manager.user_loader
+def load_user(uid):
+    return User.query.get(uid)
+if __name__ == '__main__':
+    user = User()
+    user.username = '陈新宇'
+    user.password = '123'
+    db.session.add(user)
+    db.session.commit()
