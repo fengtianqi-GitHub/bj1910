@@ -24,6 +24,9 @@ def index(cid=0):
     small_category = Category.query.filter(Category.parentid != 0).all()
 
     #统计帖子数，回复数
+    # 原生sql语句执行
+    res = db.session.execute("select sum(replycount) reply from bbs_category")
+    print(res.fetchall(),"ddddd")
     counts = db.session.query(func.sum(Category.replycount),func.sum(Category.forumcount)).group_by(Category.parentid).having(Category.parentid==0).all()
     print(counts[0][0],counts[0][1])
     replycount = counts[0][0]
@@ -31,10 +34,10 @@ def index(cid=0):
 
     # 会员数
     user_count = User.query.count()
-    print(user_count)
+
 
     new_user = User.query.order_by(-User.id).limit(1).first()
-    print(new_user)
+
 
     # forumcount = Category.query(func.sum(Category.forumcount)).scalar()
     # 指定大板块
