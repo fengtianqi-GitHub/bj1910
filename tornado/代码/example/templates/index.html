@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>过年了</h1>
+<!--<img src="/static/logo.png" alt=""> <br>-->
+<img src="{{static_url('logo.png')}}" alt=""> <br>
+Hello--{{name}}
+<p>
+    {{ n + 1 }}
+</p>
+<p>
+    {% if n > 5 %}
+        <h2>n>5</h2>
+    {% end %}
+</p>
+<p>
+    {{upper(name)}}
+</p>
+</body>
+</html>
