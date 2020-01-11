@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>聊天</title>
+</head>
+<body>
+<input type="text" name="message"><input type="submit" value="发送"> <br>
+<div id="chat">
+
+</div>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    //websocket对象
+    var ws = new WebSocket("ws://localhost:8000/ws")
+
+    // 接收消息
+    ws.onmessage = function (e) {
+        console.log(e.data)
+        $("#chat").append("<p>"+e.data+"</p>")
+    }
+    // 发送消息
+    $("input[type='submit']").click(function (e) {
+        message = $("input[type='text']").val()
+        console.log(message)
+        ws.send(message)
+    })
+</script>

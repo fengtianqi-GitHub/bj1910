@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>{{ title }}</title>
+    {% block links %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index/css/style.css') }}" />
+{#	<!--{if $thispage=="index.php"}-->#}
+{#	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index/css/index.css') }}" />#}
+{#	<!--{elseif $thispage=='list.php'}-->#}
+{#	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index/css/list.css') }}" />#}
+{#	<!--{elseif $thispage=='detail.php'}-->#}
+{#	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index/css/view.css') }}" />#}
+{#	<!--{elseif $thispage=='user.php'}-->#}
+{#	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='index/css/home.css') }}" />#}
+{#	<!--{/if}-->#}
+    {% endblock links %}
+</head>
+
+<body>
+
+<div id="toptb" class="cl">
+	<div class="wp">
+		<div class="z"><a href="javascript:;" onclick="setHomepage('{$web_url}')" >设为首页</a><a href="javascript:;" onclick="window.external.AddFavorite(location.href,document.title);return false;">收藏本站</a></div>
+	</div>
+</div>
+<script>
+function setHomepage(sURL) {
+
+		document.body.style.behavior = 'url(#default#homepage)';
+		document.body.setHomePage(sURL);
+
+}
+</script>
+
+<div id="hd">
+	<div class="wp">
+		<div class="hdc cl">
+			<h2><a href="./" title="{$title}"><img src="{{ url_for('static',filename='index/images/logo.jpg') }}" height="80" border="0" /></a></h2>
+			{% if current_user.is_authenticated %}
+				<div id="um">
+					<div class="avt y"><a href="home_tx.php"><img src="{{ url_for('static',filename=current_user.portrait) }}" /></a></div>
+					<p>
+					<strong class="vwmy"><a href="home.php" target="_blank">{{ current_user.username }}</a></strong>
+					<span class="pipe">|</span><a href="home.php">设置</a>
+					{% if current_user.usertype %}
+					<span class="pipe">|</span><a href="admin.php" target="_blank">管理中心</a>
+					{% endif %}
+					<span class="pipe">|</span><a href="/user/logout">退出</a>
+					</p>
+					<p>
+					<a id="extcreditmenu" href="#">积分: {{ current_user.grade }}</a>
+					<span class="pipe">|</span>用户权限: {{ '管理员' if current_user.usertype else '普通用户' }}
+					</p>
+				</div>
+				{% else %}
+				<form method="post" autocomplete="off" id="lsform" action="{{ url_for('user.login') }}">
+				<div class="fastlg cl">
+					<div class="y pns">
+						<table cellspacing="0" cellpadding="0">
+							<tr>
+								<td><span class="ftid">用户名</span></td>
+								<td><input type="text" name="username" value="" id="ls_username" autocomplete="off" class="px vm" /></td>
+								<td class="fastlg_l">
+									<label for="ls_cookietime"><input type="checkbox" name="cookietime" id="ls_cookietime" class="pc" value="true" />自动登录</label>
+								</td>
+								<td>&nbsp;<a href="getpass.php">找回密码</a></td>
+							</tr>
+							<tr>
+								<td><label for="ls_password" class="z psw_w">密码</label></td>
+								<td><input type="password" name="password" id="ls_password" class="px vm" autocomplete="off" /></td>
+								<td class="fastlg_l"><button type="submit" class="pn vm" name="loginsubmit" value="true" style="width:75px;"><em>登录</em></button></td>
+								<td>&nbsp;<a href="{{ url_for('user.register') }}" class="xi2 xw1">立即注册</a></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				</form>
+			{% endif %}
+		</div>
+
+		<div id="nv">
+			<ul>
+				<li class="a" id="mn_forum" ><a href="{{ url_for('bbs.index') }}" hidefocus="true" title="{$web_name}">首页</a><span>{$web_name}</span></li>
+				{% for category in big_category %}
+				<li class="a" id="mn_home" ><a href="/{{ category.cid }}/" hidefocus="true" title="Space">{{ category.classname }}</a></li>
+				{% endfor %}
+
+			</ul>
+		</div>
+
+		<div id="scbar" class="cl">
+			<form id="scbar_form" method="get" autocomplete="off" action="search.php" target="_blank">
+			<table cellspacing="0" cellpadding="0">
+				<tr>
+					<td class="scbar_icon_td"></td>
+					<td class="scbar_txt_td"><input type="text" name="keywords" id="scbar_txt" onfocus="if(this.value=='请输入搜索内容'){this.value='';this.style.color='#666';}" onblur="if(this.value==''){this.value='请输入搜索内容';this.style.color='#ccc';}" value="请输入搜索内容" style="color:#CCCCCC" autocomplete="off" /></td>
+					<td class="scbar_btn_td">
+						<button type="submit" name="searchsubmit" id="scbar_btn" class="pn pnc" value="true"><strong class="xi2 xs2">搜索</strong></button>
+					</td>
+					<td class="scbar_hot_td">
+						<div id="scbar_hot">
+							<strong class="xw1">热搜: </strong>
+							<!--{loop $keyWords $kwVal}-->
+							<a href="search.php?keywords={$kwVal}" target="_blank" class="xi2">{$kwVal}</a>
+							<!--{/loop}-->
+						</div>
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</div>
+</div>
