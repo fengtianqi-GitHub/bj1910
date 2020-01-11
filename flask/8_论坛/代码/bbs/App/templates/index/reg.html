@@ -1,12 +1,6 @@
-<!--{include header.html}-->
-<!--TOP start-->
-<!--{include top.html}-->
-<!--TOP end-->
+{% extends 'index/common/Base.html' %}
 
-<!--HEAD start-->
-<!--{include head.html}-->
-<!--HEAD end-->
-
+{% block content %}
 <!--REG START-->
 <div id="wp" class="wp">
 	<div id="ct" class="ptm wp cl">
@@ -61,7 +55,7 @@
 										<tr>
 											<th><span class="rq">*</span><label for="yzm">验证码:</label></th>
 											<td><input style="width:50px;" maxlength="4" type="text" id="yzm" name="yzm" onfocus="checkReg('yzm')" size="25" class="px" /><br /><em id="emailmore">&nbsp;</em></td>
-											<td class="tipcol"><i id="tip_yzm" class="p_tip"><img src="verify.php" id="p_yzm" onclick="show('p_yzm')" style="cursor:pointer" /> <a href="javascript:;" onclick="show('p_yzm')">看不清？</a></i></td>
+											<td class="tipcol"><i id="tip_yzm" class="p_tip"><img src="{{ url_for('user.verify_code') }}" id="p_yzm" onclick="show('p_yzm')" style="cursor:pointer" /> <a href="javascript:;" onclick="show('p_yzm')">看不清？</a></i></td>
 										</tr>
 									</table>
 								</div>
@@ -105,14 +99,7 @@ function checkRegOut(obj,test){
 }
 
 function show(obj){
-	document.getElementById(obj).src='verify.php?math='+Math.random();
+	document.getElementById(obj).src="{{ url_for('user.verify_code') }}?math="+Math.random();
 }
 </script>
-<!--REG END-->
-
-<!--FOOT start-->
-<!--{include footer.html}-->
-<!--FOOT end-->
-</body>
-</html>
-
+{% endblock content %}

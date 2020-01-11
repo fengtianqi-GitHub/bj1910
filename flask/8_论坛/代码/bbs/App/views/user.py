@@ -6,10 +6,11 @@
 # @QQ      :
 from hashlib import md5
 
-from flask import Blueprint, request, redirect, url_for
+from flask import Blueprint, request, redirect, url_for, render_template, session, make_response
 from flask_login import login_user,logout_user
 
 from App.models import User,db
+from App.views.tools import VerifyCode
 
 user = Blueprint('user',__name__,url_prefix='/user')
 
@@ -38,6 +39,13 @@ def logout():
     logout_user()
     return redirect(url_for('bbs.index'))
 
+@user.route("/register/")
+def register():
+    if request.method == 'POST':
+        pass
+    return render_template('index/reg.html')
+
+
 @user.route('/test')
 def add_user():
     # user = User()
@@ -48,3 +56,12 @@ def add_user():
     user = User.query.filter(User.username=='陈新宇').first()
     print(user.check_password('1223'))
     return "add a user"
+
+@user.route('/yzm/')
+def verify_code():
+    vc = VerifyCode()
+    data = vc.generate()
+    session['code'] = vc.code
+    response = make_response(data)
+    response.headers['Content-type'] = 'image/png'
+    return response
