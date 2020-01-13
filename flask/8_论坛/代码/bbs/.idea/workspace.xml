@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f3638082-df60-4843-9dbd-bf88e42fbae4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/App/static/fonts/simkai.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/templates/index/common/Base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/templates/index/header1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../tornado/代码/robot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../tornado/代码/robot/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f3638082-df60-4843-9dbd-bf88e42fbae4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="640" />
@@ -219,7 +211,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/App/views" />
+    <property name="last_opened_file_path" value="//vmware-host/Shared Folders/桌面/course/第四周/4/19_进程和协程/代码" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -355,16 +347,15 @@
       <workItem from="1578559765425" duration="8370000" />
       <workItem from="1578615350312" duration="225000" />
       <workItem from="1578705998271" duration="265000" />
-      <workItem from="1578707146705" duration="5942000" />
+      <workItem from="1578707146705" duration="6589000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40599000" />
+    <option name="totallyTimeSpent" value="41246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22330096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
