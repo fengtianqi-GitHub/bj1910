@@ -2,119 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad637080-525f-4e55-80b1-0045a3cc842a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../1_路由/代码/example02/App/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../1_路由/代码/example02/App/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/site.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/btn_push.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/cloud.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/cloud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/editor_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/editor_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/fwin_menu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/ico_d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/image_s.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/pn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/pt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qqgroup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qqgroup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qun_bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qun_btn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qun_op.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qun_op_list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/qun_op_top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/right.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/thumb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/cloud/wrong.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/admincp.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/add.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/ajax_loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/article.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/articlelist.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_button.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_custom.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_custom_t.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_header.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_input.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_list.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_login.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_menu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_menu2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repno.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repx.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repx_h.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repx_hb.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repx_hc.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/bg_repx_hd.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/blog.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/btn_add2menu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/btn_block.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/btn_block_2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/btn_block_3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/btn_map.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/close.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cls.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/color.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/cornerbanner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/couplebanner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/custom.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/desc.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/faq.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/feed.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/float.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/footerbanner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/getcolor.htm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/greenplugin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/headerbanner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/intercat.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/interthread.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/login_header.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/login_title.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo_hover.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/newwin.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/plugin_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pm_ntc.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/process.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/processbg.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/scrolld.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/scrollu.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/search.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/stylepreview.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/subnavbanner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/text.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/thread.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/threadlist.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/transcolor.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/transparent.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/watermarkpreview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/admincp.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_category_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_detail_del.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_detail_hf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_detail_hf_del.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_link.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_lock_ip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_member.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/admin_member_show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_路由/代码/day01/.idea/day01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_路由/代码/day01/.idea/day01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_路由/代码/day01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_路由/代码/day01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_路由/代码/day01/App/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../1_路由/代码/day01/App/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../1_路由/代码/example01/.idea/example01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../1_路由/代码/example01/.idea/example01.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../flask/8_论坛/代码/bbs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../flask/8_论坛/代码/bbs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,12 +11,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/luntan/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="118" column="30" lean-forward="true" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+            <state relative-caret-position="3540">
+              <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -136,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/luntan/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="540">
               <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
                 <element signature="e#630#662#0" expanded="true" />
@@ -145,44 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/App/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="300">
               <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <element signature="e#114#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="101" column="18" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/admin/admin_index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -225,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="640" />
@@ -237,6 +92,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,10 +130,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/App" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -337,26 +193,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578907667122</updated>
-      <workItem from="1578907670703" duration="1622000" />
+      <workItem from="1578907670703" duration="1720000" />
+      <workItem from="1578960354213" duration="264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1622000" />
+    <option name="totallyTimeSpent" value="1984000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13106796" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13268608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.21306376" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -364,40 +215,36 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.21306376" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/site.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/urls.py">
+    <entry file="file://$PROJECT_DIR$/luntan/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#114#142#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3540">
+          <caret line="118" column="30" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/luntan/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="540">
           <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
           <folding>
             <element signature="e#630#662#0" expanded="true" />
@@ -405,10 +252,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/luntan/settings.py">
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="118" column="30" lean-forward="true" selection-start-line="118" selection-start-column="30" selection-end-line="118" selection-end-column="30" />
+        <state relative-caret-position="540">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -422,10 +276,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/admin_index.html">
+    <entry file="file://$PROJECT_DIR$/App/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="300">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
         </state>
       </provider>
     </entry>
