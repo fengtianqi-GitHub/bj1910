@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内置标签</title>
+</head>
+<body>
+{#  没有0 < num < 20 #}
+{% if num > 0 and num < 20  %}
+    <p>{{ num }}</p>
+{% else %}
+    <p>小于0</p>
+{% endif %}
+<p>
+    {% for value in list1 reversed %}
+        <li>{{ value }}</li>
+    {% empty %}
+        <p>列表为空</p>
+    {% endfor %}
+</p>
+</body>
+</html>
