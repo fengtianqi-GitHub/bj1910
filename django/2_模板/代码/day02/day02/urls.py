@@ -21,4 +21,6 @@ urlpatterns = [
     # 加载App中子路由
     path("user/",include("App.urls")),
     path("app2/",include("app2.urls")),
+
+
 ]

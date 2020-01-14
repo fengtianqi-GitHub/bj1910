@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="{% url 'app2:login' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="username" > <a>提交</a>
+</form>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+<script>
+$("a").click(function () {
+    csrf = $("[name='csrfmiddlewaretoken']").val()
+    username = $("[name='username']").val()
+    $.post("{% url 'app2:login' %}",{'csrfmiddlewaretoken':'UNhOt9oUccKy4j9zUmSNWa0MpFFx5UdhVuro66dLZ4cWcPX9WiAcjKz4ox0bMTPA',
+            'username':username
+    },function (data) {
+        console.log(data)
+    })
+})
+</script>

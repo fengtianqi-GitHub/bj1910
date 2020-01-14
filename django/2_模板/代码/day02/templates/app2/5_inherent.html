@@ -1,0 +1,8 @@
+{% extends 'app2/common/Base.html' %}
+{% load static %}
+{% block content %}
+    <h2>马上小年了</h2>
+{#    <img src="/static/images/6.jpeg" alt="">#}
+{#  获取静态资源  #}
+    <img src="{% static 'images/6.jpeg' %}" alt="">
+{% endblock %}
