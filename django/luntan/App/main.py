@@ -2,6 +2,7 @@ import re
 
 from django.shortcuts import render
 
+from App.forms import LoginForm
 
 
 def login():
@@ -105,3 +106,11 @@ def logout(request):
 # @admin.route('/dolink/')
 # def dolink():
 #     return  '退出登录'
+
+def yzm(request):
+    form = LoginForm()
+    if request.POST:
+        if form.is_valid():
+            pass
+
+    return render(request,'test.html',context=locals())

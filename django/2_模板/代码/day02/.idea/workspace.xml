@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4df05029-1e70-4a42-b8e3-d546ae69ae9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app2/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app2/templatetags/register_filter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app2/1_var.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app2/2_filter.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app2/3_inner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/app2/5_inherent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app2/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app2/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app2/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app2/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/day02/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day02/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/day02/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="4df05029-1e70-4a42-b8e3-d546ae69ae9a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,17 +73,6 @@
               <item name="day02" type="462c0819:PsiDirectoryNode" />
               <item name="day02" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="day02" type="b2602c69:ProjectViewProjectNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -165,24 +142,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1578963884449</updated>
-      <workItem from="1578963886309" duration="17874000" />
+      <workItem from="1578963886309" duration="18499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17874000" />
+    <option name="totallyTimeSpent" value="18499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24595469" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24595469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.38102645" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.38102645" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />

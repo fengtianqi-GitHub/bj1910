@@ -7,8 +7,9 @@
 from django.urls import path
 
 from App import main
-
+app_name = "App"
 urlpatterns = [
-    path('login/', main.login,name='login'),
+    path('login/', main.login, name='login'),
     path('', main.index,name='index'),
+    path('yzm/',main.yzm,name='yzm'),
 ]
