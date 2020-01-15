@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>帖子列表</title>
+</head>
+<body>
+<table border="1" cellspacing="0" width="100%">
+    {% for post in data %}
+        <tr>
+            <td>{{ post.id }}</td>
+{#            <td>{{ post.username }}</td>#}
+            <td>{{ post.uname }}</td>
+            <td>{{ post.title }}</td>
+            <td>{{ post.cname }}</td>
+{#            <td>{{ post.classname }}</td>#}
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

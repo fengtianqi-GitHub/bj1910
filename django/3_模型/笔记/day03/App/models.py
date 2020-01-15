@@ -1,5 +1,14 @@
 from django.db import models
 
+# 自定义管理器类
+class MyManager(models.Manager):
+    def get_queryset(self):
+        # 不查询逻辑删除的帖子
+        return super().get_queryset().filter(isdel=0)
+
+
+
+
 # Create your models here.
 class User(models.Model):
     uid = models.AutoField(primary_key=True)
@@ -7,6 +16,9 @@ class User(models.Model):
     # db_column 如果属性名和表中字段名不一致，需要设置db_column,db_column是表中的字段名
     password = models.CharField(max_length=128,db_column='password_hash')
     sex = models.IntegerField(choices=((1,'男'),(2,'女')),default=1)
+    allowlogin = models.IntegerField()
+
+
 
     def __str__(self):
         return f"{self.username}:{self.sex}"
@@ -96,6 +108,9 @@ class Post(models.Model):
     style = models.CharField(max_length=10, blank=True, null=True)
     isdisplay = models.IntegerField()
 
+    # 自定义管理器
+    other = MyManager()
+
     class Meta:
         managed = False
         db_table = 'bbs_post'
@@ -139,3 +154,20 @@ class Reply(models.Model):
 #         managed = False
 #         db_table = 'bbs_user'
 
+class V_post(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=10000)
+    content = models.CharField(max_length=20000)
+    username = models.CharField(max_length=60)
+    classname = models.CharField(max_length=60)
+    class Meta:
+        db_table = 'v_post'
+
+class V_3(models.Model):
+    uname = models.CharField(max_length=60)
+    title = models.CharField(max_length=1000)
+    content = models.CharField(max_length=10000)
+    cname = models.CharField(max_length=100)
+
+    class Meta:
+        db_table = 'v_3'

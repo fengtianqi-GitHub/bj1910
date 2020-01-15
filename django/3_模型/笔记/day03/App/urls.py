@@ -15,4 +15,7 @@ urlpatterns = [
     path("create/",views.process,name='create'),
     path("find/",views.find,name='find'),
     path("query/",views.query1,name='query'),
+    path("post/",views.list_post,name='post'),
+    path("or/",views.logic_or,name='or'),
+    path("manager/",views.custom_manager,name='manager')
 ]
