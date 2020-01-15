@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<h1>电动车</h1>
+<p>{{ name|upper }}</p>
+<p>{{ num }}</p>
+<p>
+    <img src="{% static 'images/2020.jpg' %}" alt="">
+    <a href="{% url 'App:new' %}">new year</a>
+</p>
+
+</body>
+</html>

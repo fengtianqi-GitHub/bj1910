@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad637080-525f-4e55-80b1-0045a3cc842a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/App/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../2_模板/代码/day02/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../2_模板/代码/day02/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luntan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/luntan/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/luntan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/luntan/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/admin_login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/admin_login.html" afterDir="false" />
-    </list>
+    <list default="true" id="ad637080-525f-4e55-80b1-0045a3cc842a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="640" />
@@ -247,12 +235,12 @@
       <updated>1578907667122</updated>
       <workItem from="1578907670703" duration="1720000" />
       <workItem from="1578960354213" duration="264000" />
-      <workItem from="1578993677290" duration="2931000" />
+      <workItem from="1578993677290" duration="3269000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4915000" />
+    <option name="totallyTimeSpent" value="5253000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
