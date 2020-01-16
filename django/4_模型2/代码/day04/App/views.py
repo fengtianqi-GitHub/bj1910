@@ -6,6 +6,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from App.models import User, Post
+from App.models2 import Student, Archive, Publisher, Book
 
 
 def home(request):
@@ -80,3 +81,47 @@ def home(request):
         print(rec.classname,rec.username,rec.title)
 
     return HttpResponse("home")
+
+
+def one2one(request):
+    # student = Student.objects.first()
+    # 增加一个学生
+    # student = Student(sname="hello")
+    # student.save()
+    # print(student.sno)
+    # 增加档案信息
+    # archive = Archive(address="武汉")
+    # archive.student = Student.objects.get(pk=3)
+    # archive.save()
+
+    # student=>archive
+    # data = Student.objects.first().archive
+    # data = Archive.objects.filter(student=Student.objects.get(pk=1).sno).first()
+
+    # archive = >
+    # data = Archive.objects.first().student
+    # print(data)
+
+    #夸关系查
+    # archive__address
+    # data = Student.objects.filter(archive__address='bj')
+    data = Archive.objects.filter(student__sno=3)
+    print(data)
+
+    return HttpResponse("one to one")
+
+
+def one2many(request):
+    # publisher = Publisher.objects.create(pname='科学技术出版社')
+    # print(publisher.pid)
+    # add book
+    pub = Publisher.objects.first()
+    # pub.books.create(bname="高数")
+
+    # publisher = > book
+    # data = pub.books.all()
+
+    # book=>publisher
+    data = Book.objects.first()
+    print(data.publisher)
+    return HttpResponse("one to many")

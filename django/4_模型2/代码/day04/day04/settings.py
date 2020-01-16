@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'day04.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'bj1910',
+        'NAME': 'student',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD' : '123',
