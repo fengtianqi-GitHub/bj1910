@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>app02的首页</title>
+</head>
+<body>
+{# 在用户模板里可以直接使用user这个全局对象（使用了用户认证系统，模板里才有user对象）     #}
+{# 如果用户登录过，is_authenticated为True，否则为False    #}
+{% if user.is_authenticated %}
+    <p>
+        欢迎尊敬贵宾{{ user.username }}回来 <a href="{% url 'app04:logout' %}">退出登录</a>
+    </p>
+{% else %}
+    <p>
+        你还没有登录，请先 <a href="{% url 'app04:login' %}">登录</a>
+    </p>
+{% endif %}
+</body>
+</html>

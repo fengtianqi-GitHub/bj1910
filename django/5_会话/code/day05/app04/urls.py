@@ -19,7 +19,9 @@ from app04 import views
 app_name = 'app04'
 urlpatterns = [
     path('register/',views.register,name='register'),
-    path('login/',views.login,name = 'login'),
+    path('login/',views.user_login,name = 'login'),
     path('index/',views.index,name = 'index'),
-    path('logout/',views.logout,name = 'logout'),
+    path('logout/',views.user_logout,name = 'logout'),
+    # 需要路由保护
+    path('getmoney/',views.get_money,name='getmoney'),
 ]

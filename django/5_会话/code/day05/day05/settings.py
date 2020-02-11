@@ -133,3 +133,6 @@ SESSION_COOKIE_AGE = 3 * 24 * 60 * 60
 
 # 自定义用户模型
 AUTH_USER_MODEL = "app04.User"
+
+# 用户登录跳转地址
+# LOGIN_URL = '/app04/login/'

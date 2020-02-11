@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f63cd42f-92f0-407d-943f-43f1d3e0295e" name="Default Changelist" comment="" />
+    <list default="true" id="f63cd42f-92f0-407d-943f-43f1d3e0295e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../../1_linux.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app04/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app04/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app04/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/app04/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app04/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app04/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/day05/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +59,9 @@
     </expand>
     <select />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -74,17 +84,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/App03" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/app04" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/app04" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/app04" />
       <recent name="$PROJECT_DIR$/App03" />
       <recent name="$PROJECT_DIR$/App02" />
       <recent name="$PROJECT_DIR$/App01" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$/app04" />
     </key>
   </component>
   <component name="RunManager">
@@ -124,6 +136,8 @@
       <option name="presentableId" value="Default" />
       <updated>1581300686173</updated>
       <workItem from="1581300710455" duration="12217000" />
+      <workItem from="1581332103842" duration="623000" />
+      <workItem from="1581385064028" duration="6013000" />
     </task>
     <servers />
   </component>
@@ -171,10 +185,14 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state width="239" height="457" key="HiddenNamespacesPopup/0.23.1280.777@0.23.1280.777" timestamp="1581318185467" />
-    <state x="317" y="244" key="com.intellij.ide.util.TipDialog" timestamp="1581300711360">
+    <state x="141" y="50" key="SettingsEditor" timestamp="1581332199756">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="317" y="244" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1581300711359" />
+    <state x="141" y="50" key="SettingsEditor/0.23.1280.777@0.23.1280.777" timestamp="1581332199756" />
+    <state x="193" y="228" key="com.intellij.ide.util.TipDialog" timestamp="1581385066378">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="193" y="228" key="com.intellij.ide.util.TipDialog/0.23.1280.777@0.23.1280.777" timestamp="1581385066378" />
     <state x="314" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1581322683288">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
