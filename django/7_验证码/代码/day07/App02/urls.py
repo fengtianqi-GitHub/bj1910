@@ -14,12 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
+from App02 import views
+app_name = 'App02'
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('app01/',include("App01.urls")),
-    path('app02/',include("App02.urls")),
-    # 在跟路由添加验证码的路由
-    path('captcha/',include("captcha.urls")),
+    path('list/', views.list_user,name='list'),
+    path('list/<int:page>/', views.list_user,name='list'),
+
 ]
