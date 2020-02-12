@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'App01.apps.App01Config',
-    'captcha'  # 安装第三方应用
+    'captcha',  # 安装第三方应用
+    'App02',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +80,8 @@ WSGI_APPLICATION = 'day07.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'day07',
+        # 'NAME': 'day07',
+        'NAME': 'bj1910',
         'HOST': 'localhost',
         'USER': 'root',
         'PASSWORD': '123',
@@ -143,3 +145,7 @@ CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.random_char_challenge' # 图片中的
 # CAPTCHA_CHALLENGE_FUNCT = 'captcha.helpers.math_challenge'    # 图片中的文字为数字表达式，如1+2=</span>
 CAPTCHA_LENGTH = 4 # 字符个数
 CAPTCHA_TIMEOUT = 1 # 超时(minutes)
+
+
+# 分页
+COUNT_OF_PAGE = 10   # 每页10条记录
