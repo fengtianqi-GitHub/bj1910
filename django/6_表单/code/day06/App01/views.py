@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-from App01.forms import RegisterForm
+from App01.forms import RegisterForm, MyForm
 from App01.models import User
 
 
@@ -23,3 +23,4 @@ def register(request):
             return render(request, 'register.html', locals())
     else:
         return render(request,'register.html')
+
