@@ -35,6 +35,7 @@
         let phone = $("#phone").val();
         let csrf = $("[name='csrfmiddlewaretoken']").val();
         // 发送短信验证码
+        //ajax
         $.post("{% url 'App01:sms' %}",{'phone':phone,'csrfmiddlewaretoken':csrf},function (data) {
             console.log(data)
         })
