@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'App01.apps.App01Config',
     'tinymce',
+    'App02',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'MyMiddleWare.middlewares.MiddleWare1',
+    'App02.middleware.CustomMiddleWare', # 注册中间件
+
 ]
 
 ROOT_URLCONF = 'day08.urls'
@@ -137,7 +141,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'static/upload')
 # smtp服务的邮箱服务器
 EMAIL_HOST = 'smtp.126.com'
 # smtp服务固定的端口是25
-EMAIL_PORT = 25
+EMAIL_PORT = 25   # 也有可能是465
 #发送邮件的邮箱
 EMAIL_HOST_USER = 'landmark_csl@126.com'
 #在邮箱中设置的客户端授权密码
