@@ -1,4 +1,4 @@
-"""day08 URL Configuration
+"""day09 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -14,11 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
+from App import views
+app_name = "App"
 urlpatterns = [
-    # 站点管理的路由
-    path('admin/', admin.site.urls),
-    path('app01/',include("App01.urls")),
-    path('app02/',include("App02.urls")),
+    path('index/', views.home,name='index'),
+
+    # 页面局部缓存
+    path('some/',views.cahce_some_content,name='some'),
+
+    # 手动缓存
+    path('custom/',views.custom_cache,name='custom'),
+
+    # 日志测试
+    path('log/',views.do_log,name='log')
 ]

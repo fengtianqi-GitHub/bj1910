@@ -1,4 +1,4 @@
-"""day08 URL Configuration
+"""day09 URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -17,8 +17,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    # 站点管理的路由
     path('admin/', admin.site.urls),
-    path('app01/',include("App01.urls")),
-    path('app02/',include("App02.urls")),
+    path('app/',include("App.urls"))
 ]

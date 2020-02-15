@@ -19,9 +19,13 @@ filename = "1.jpg"
 # if ext not in ['bmp','png','jpeg']:
 #     print("后缀命名不符合要求")
 #
-from day08 import settings
-res = datetime.now().strftime("%Y/%m/%d")
-res = os.path.join(settings.MEDIA_ROOT,res)
-print(res)
-if not os.path.exists(res):
-    os.makedirs(res)
+# from day08 import settings
+# res = datetime.now().strftime("%Y/%m/%d")
+# res = os.path.join(settings.MEDIA_ROOT,res)
+# print(res)
+# if not os.path.exists(res):
+#     os.makedirs(res)
+
+
+
+
