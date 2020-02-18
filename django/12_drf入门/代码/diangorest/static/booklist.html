@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书列表</title>
+</head>
+<body>
+<table cellspacing="0" border="1">
+
+</table>
+</body>
+</html>
+<script src="jquery.min.js"></script>
+<script>
+    $.get("http://127.0.0.1:9006/list/",function (data) {
+        console.log(data,typeof data)
+        for (book in data){
+            s1="<tr>"+"<td>"+data[book].btitle+"</td>"+"</tr>";
+            console.log(data[book].btitle);
+            $("table").append(s1);
+        }
+    })
+</script>
