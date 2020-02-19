@@ -26,7 +26,8 @@ def register(request):
             User.objects.create_user(username=username,password=password,email=email)
             # 转到登录界面
             return redirect(reverse("app04:login"))
-    return render(request,'app04/register.html')
+    else:
+        return render(request,'app04/register.html')
 
 
 def user_login(request):
