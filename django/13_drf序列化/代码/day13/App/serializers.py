@@ -15,6 +15,7 @@ from rest_framework import serializers
 #     bread = serializers.IntegerField()
 #     bcomment = serializers.IntegerField()
 #     bimage = serializers.CharField()
+#     def create
 
 # 从模型生成序列化类
 from App.models import BookInfo, Heroinfo
