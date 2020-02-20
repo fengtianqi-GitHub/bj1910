@@ -22,8 +22,8 @@ class MyAuthentication(BaseAuthentication):
     def authenticate(self, request):
         """自定义认证方法"""
         # get请求不需要认证
-        if request.method == "GET":
-            return None
+        # if request.method == "GET":
+            # return None
 
         # 从客户端的查询参数（get参数)获取token
         token = request.query_params.get('token')
@@ -31,6 +31,7 @@ class MyAuthentication(BaseAuthentication):
             raise AuthenticationFailed("没有token")
         # 从缓存中获取用户uid
         uid = cache.get(token)
+        print(uid)
         if not uid:
             raise AuthenticationFailed("token过期了")
 
@@ -38,5 +39,6 @@ class MyAuthentication(BaseAuthentication):
         user = User.objects.get(pk=int(uid))
         if not user:
             raise AuthenticationFailed("非法用户")
+        print("---------------")
         # 验证通过
         return user,None

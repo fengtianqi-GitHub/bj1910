@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+# from rest_framework.throttling import AnonRateThrottle
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -144,4 +146,14 @@ REST_FRAMEWORK = {
     # 'DEFAULT_AUTHENTICATION_CLASSES': (
     #     'App.autentications.MyAuthentication',
     # )
+
+    # 节流配置
+    # 'DEFAULT_THROTTLE_CLASSES': ["rest_framework.throttling.AnonRateThrottle"],
+    #
+    #  'DEFAULT_THROTTLE_RATES': {
+    #       # 'vistor': '3/m',
+    #        'anon': '10/day',# 匿名用户
+    #     },
+    # 'DEFAULT_PAGINATION_CLASS':  'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 2  # 每页数目
 }
