@@ -189,3 +189,13 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
 )
 
+# 支付宝配置
+# 支付宝公钥
+# ALI_PUBLIC_KEY = open(os.path.join(BASE_DIR,'utils/ali_public_key.pem'))
+# # 应用程序私钥
+# APP_PRIVATE_KEY = open(os.path.join(BASE_DIR,'utils/app_private_key.pem'))
+# # 应用程序的appid
+# APPID = "2016100100641498"
+
+
+
