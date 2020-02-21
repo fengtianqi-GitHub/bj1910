@@ -29,15 +29,3 @@ class Heroinfo(models.Model):
     class Meta:
         managed = False
         db_table = 'heroinfo'
-
-
-class User(models.Model):
-    username = models.CharField(unique=True, max_length=150)
-    password = models.CharField(max_length=128)
-    usertype = models.IntegerField(null=True,default=3)
-    email = models.CharField(max_length=254, blank=True, null=True)
-    date_joined = models.DateTimeField(null=True,default=datetime.now)
-
-    class Meta:
-        managed = False
-        db_table = 'user'

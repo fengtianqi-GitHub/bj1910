@@ -35,6 +35,8 @@ class BooksView(ListModelMixin,
 
     def get(self,request,*args,**kwargs):
         if len(kwargs) > 0: # 查询指定对象
+            user = self.get_object()
+            print(User.chinese())
             return self.retrieve(request,*args,**kwargs)
         else: # 查询所有对象
             # data = self.queryset.all()
